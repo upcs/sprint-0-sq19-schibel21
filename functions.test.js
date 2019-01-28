@@ -5,7 +5,7 @@
 const sum = require('./functions');
 
 test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1,2)).toBe(3);
+    expect(sum(1,2)).toBe(4);
 });
 
 test('adding positive numbers does not equal to less then zero', () => {
