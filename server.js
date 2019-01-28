@@ -1,6 +1,15 @@
+/*Sarah Schibel*/
+/*January 26th 2019*/
+/*DOCTYPE JS*/
+
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+
+var express = require('express');
+var app = express();
+app.use('/css',express.static( 'public/css'));
+
 
 // Create a server
 http.createServer( function (request, response) {  
@@ -34,4 +43,4 @@ http.createServer( function (request, response) {
 }).listen(8081);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1:8081/');
+console.log('Server running at http://127.0.0.1:8081/index.html');
